@@ -30,7 +30,7 @@ try:
         if e1.get() == '':
             e1.insert(0, 'Search city')
 
-    e1 = Entry(w, width=21, fg='white', bg='#353535', border=0)
+    e1 = Entry(w, width=21, fg='white', bg='#353536', border=0)
     e1.config(font=('Times New Roman', 12))
     e1.bind("<FocusIn>", on_entry)
     e1.bind("<FocusOut>", on_leave)
@@ -89,7 +89,7 @@ try:
             bcolor = "#f7492b3"
             fcolor = "white"
 
-        elif c <= 10 and weather == "Clouds":
+        elif c <= 10 and weather == "Partly Cloudy":
             Frame(w, width=800, height=350, bg="#f7492b3").place(x=0, y=50)
             imgWeather = ImageTk.PhotoImage(Image.open("partlycloudy.png"))
             Label(w, image=imgWeather, border=0).place(x=170, y=130)
