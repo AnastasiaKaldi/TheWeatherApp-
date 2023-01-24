@@ -77,26 +77,36 @@ try:
 
         if c > 10 and weather == "Haze" or weather == "Clear":
             Frame(w, width=800, height=350, bg="#ffbf80").place(x=0, y=50)
+            imgWeather = ImageTk.PhotoImage(Image.open("sun.png"))
+            Label(w, image=imgWeather, border=0).place(x=170, y=130)
             bcolor = "#ffbf80"
             fcolor = "white"
 
         elif c > 10 and weather == "Clouds":
             Frame(w, width=800, height=350, bg="#bfbfbf").place(x=0, y=50)
+            imgWeather = ImageTk.PhotoImage(Image.open("cloud.png"))
+            Label(w, image=imgWeather, border=0).place(x=170, y=130)
             bcolor = "#bfbfbf"
             fcolor = "white"
 
         elif c <= 10 and weather == "Partly Cloudy":
             Frame(w, width=800, height=350, bg="#b3b3cb").place(x=0, y=50)
+            imgWeather = ImageTk.PhotoImage(Image.open("partlycloudy.png"))
+            Label(w, image=imgWeather, border=0).place(x=170, y=130)
             bcolor = "#b3b3cb"
             fcolor = "white"
 
         elif c > 10 and weather == "Rain":
             Frame(w, width=800, height=350, bg="#4080bf").place(x=0, y=50)
+            imgWeather = ImageTk.PhotoImage(Image.open("rain.png"))
+            Label(w, image=imgWeather, border=0).place(x=170, y=130)
             bcolor = "#4080bf"
             fcolor = "white"
 
         elif c <= 10 and weather == "Fog" or weather == "Clear":
             Frame(w, width=800, height=350, bg="#9494b8").place(x=0, y=50)
+            imgWeather = ImageTk.PhotoImage(Image.open("fog.png"))
+            Label(w, image=imgWeather, border=0).place(x=170, y=130)
             bcolor = "#9494b8"
             fcolor = "black"
 
