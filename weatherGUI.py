@@ -76,46 +76,36 @@ try:
         global imgWeather
 
         if c > 10 and weather == "Haze" or weather == "Clear":
-            Frame(w, width=800, height=350, bg="#f78954").place(x=0, y=50)
-            imgWeather = ImageTk.PhotoImage(Image.open("sun.png"))
-            Label(w, image=imgWeather, border=0).place(x=170, y=130)
-            bcolor = "#f78954"
+            Frame(w, width=800, height=350, bg="#ffbf80").place(x=0, y=50)
+            bcolor = "#ffbf80"
             fcolor = "white"
 
         elif c > 10 and weather == "Clouds":
-            Frame(w, width=800, height=350, bg="#f7492b3").place(x=0, y=50)
-            imgWeather = ImageTk.PhotoImage(Image.open("cloud.png"))
-            Label(w, image=imgWeather, border=0).place(x=170, y=130)
-            bcolor = "#f7492b3"
+            Frame(w, width=800, height=350, bg="#bfbfbf").place(x=0, y=50)
+            bcolor = "#bfbfbf"
             fcolor = "white"
 
         elif c <= 10 and weather == "Partly Cloudy":
-            Frame(w, width=800, height=350, bg="#f7492b3").place(x=0, y=50)
-            imgWeather = ImageTk.PhotoImage(Image.open("partlycloudy.png"))
-            Label(w, image=imgWeather, border=0).place(x=170, y=130)
-            bcolor = "#f7492b3"
+            Frame(w, width=800, height=350, bg="#b3b3cb").place(x=0, y=50)
+            bcolor = "#b3b3cb"
             fcolor = "white"
 
         elif c > 10 and weather == "Rain":
-            Frame(w, width=800, height=350, bg="#60789e").place(x=0, y=50)
-            imgWeather = ImageTk.PhotoImage(Image.open("rain.png"))
-            Label(w, image=imgWeather, border=0).place(x=170, y=130)
-            bcolor = "#60789e"
+            Frame(w, width=800, height=350, bg="#4080bf").place(x=0, y=50)
+            bcolor = "#4080bf"
             fcolor = "white"
 
         elif c <= 10 and weather == "Fog" or weather == "Clear":
-            Frame(w, width=800, height=350, bg="white").place(x=0, y=50)
-            imgWeather = ImageTk.PhotoImage(Image.open("cold.png"))
-            Label(w, image=imgWeather, border=0).place(x=170, y=130)
-            bcolor = "white"
+            Frame(w, width=800, height=350, bg="#9494b8").place(x=0, y=50)
+            bcolor = "#9494b8"
             fcolor = "black"
 
         else:
-            Frame(w, width=800, height=350, bg="white").place(x=0, y=50)
+            Frame(w, width=800, height=350, bg="#e6b3cc").place(x=0, y=50)
             label = Label(w, text=weather, border=0, bg='white')
             label.configure(font=(("Times New Roman", 18)))
             label.place(x=160, y=130)
-            bcolor = "white"
+            bcolor = "#e6b3cc"
             fcolor = "black"
 
         w_data = weather_data(query)
